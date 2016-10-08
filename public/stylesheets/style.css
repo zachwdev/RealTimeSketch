@@ -1,0 +1,104 @@
+#body{
+    background-color: #fbfbfb;
+}
+
+h1,
+h2,
+p,
+label,
+button {
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
+    font-size: 12px
+}
+
+h2{
+    font-size: 14px;
+    font-style: none;
+    font-weight: 100;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    -webkit-box-shadow: 10px 10px 52px -18px rgba(74, 74, 74, 1);
+    -moz-box-shadow: 10px 10px 52px -18px rgba(74, 74, 74, 1);
+    box-shadow: 10px 10px 52px -18px rgba(74, 74, 74, 1);
+    background-color: white;
+}
+
+
+
+#main {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#flexboxContainer {
+    display: flex;
+}
+
+#toolbar {
+    margin: 20px 10px 20px 20px;
+    margin-left: 10px;
+    border-right: 1px solid #d3d3d3;
+}
+
+.control {
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.control label,
+.control input {
+    vertical-align: middle;
+}
+
+.canvasControls:hover {
+    -webkit-box-shadow: 10px 10px 52px -18px rgba(80, 80, 80, 1);
+    -moz-box-shadow: 10px 10px 52px -18px rgba(80, 80, 80, 1);
+    box-shadow: 10px 10px 52px -18px rgba(80, 80, 80, 1);
+}
+
+
+#btnUndo {
+    display: inline-block;
+}
+
+#btnRedo {
+    display: inline-block;
+}
+
+.topLine {
+    border-top: 1px solid #d3d3d3;
+    padding-top: 10px; 
+}
+
+.btnControls {
+    text-align: center;
+}
+
+.brushStyles *{
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+
+.control button {}
+
+.control button:hover {}
+
+.control button:active {}

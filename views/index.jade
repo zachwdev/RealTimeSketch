@@ -1,0 +1,52 @@
+doctype html
+html
+  head
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    // Optional theme
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', crossorigin='anonymous')
+    // Latest compiled and minified JavaScript
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+    script(src='/javascripts/socket.io.js')
+    link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+  body#body
+    #main
+      #flexboxContainer
+        #toolbar
+          h2 Brushes
+          .control.canvasControls
+            canvas#brushCanvas1.brushCanvas(width='300px', height='70px')
+          .control.canvasControls
+            canvas#brushCanvas2.brushCanvas(width='300px', height='70px')
+          .control.canvasControls
+            canvas#brushCanvas3.brushCanvas(width='300px', height='70px')
+          .control.canvasControls
+            canvas#brushCanvas4.brushCanvas(width='300px', height='70px')
+          h2 Brush Styles
+          .control.btnControls.topLine.brushStyles
+            label(for='colorInput') Color: 
+            input#colorInput(type='color', value='#ff00ff')
+            label(for='sizeInput') Size: 
+            input#sizeInput(type='range', min='1', max='30', step='1', value='5')
+            label(for='blurSizeInput') Blur: 
+            input#blurSizeInput(type='range', min='-5', max='-1', step='.25', value='-2.5')
+          .control
+            label(for='outlineInput') Outline: 
+            input#outlineInput(type='checkbox')
+            label(for='middlePointInput') Middle Point: 
+            input#middlePointInput(type='checkbox')
+          .control.topLine
+            button#btnUndo Undo
+            button#btnRedo Redo
+            button#btnClear Clear
+          .control.btnControls
+            button#btnSave Save
+            button#btnLoad Load
+            // <button id="btnShare">Share</button>
+        #canvas
+          canvas#mainCanvas(width='900', height='700')  Your browser does not support the canvas element
+          ul#chatMessages
+    script(src='javascripts/draw.js')
+    
+
+    
